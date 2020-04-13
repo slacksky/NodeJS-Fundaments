@@ -2,7 +2,7 @@ function Hello(name){//remove the callback
     return new Promise(function (resolve, reject){
         setTimeout(function(){
             console.log('Hi, my neame is: '+name)
-            //resolve(name)//change the callback for resolve
+            resolve(name)//change the callback for resolve
             reject('there is an error')//error message 
         }, 1500)
 
