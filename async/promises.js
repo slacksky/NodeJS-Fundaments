@@ -2,7 +2,8 @@ function Hello(name){//remove the callback
     return new Promise(function (resolve, reject){
         setTimeout(function(){
             console.log('Hi, my neame is: '+name)
-            resolve(name)//change the callback for resolve
+            //resolve(name)//change the callback for resolve
+            reject('there is an error')//error message 
         }, 1500)
 
     })//promise is a global class
@@ -38,4 +39,8 @@ Hello('George')
     .then(Bye)
     .then((name) => {
         console.log('Finished the process')
+    })
+    .catch(error =>{
+        console.error('there has been an error:')
+        console.error(error)
     })
