@@ -1,4 +1,4 @@
-function Hello(name){//remove the callback
+async function Hello(name){//remove the callback
     return new Promise(function (resolve, reject){
         setTimeout(function(){
             console.log('Hi, my neame is: '+name)
@@ -26,3 +26,7 @@ function Bye(name){
     })
 
 }
+
+//-- execution block
+
+await Hello(name)
