@@ -26,21 +26,3 @@ function Bye(name){
     })
 
 }
-
-// -- excecution space
-
-console.log('Started the process')
-
-Hello('George')
-    .then(Talk)
-    .then(Talk)
-    .then(Talk)
-    .then(Talk)
-    .then(Bye)
-    .then((name) => {
-        console.log('Finished the process')
-    })
-    .catch(error =>{
-        console.error('there has been an error:')
-        console.error(error)
-    })//always use a catch
