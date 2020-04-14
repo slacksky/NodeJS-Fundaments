@@ -2,7 +2,7 @@ const fs = require('fs')
 
 function read(route,cb){
     fs.readFile(route, (err, data)=>{
-        console.log(data)
+        console.log(data.toString())
     })
 }
 
