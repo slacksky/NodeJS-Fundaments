@@ -5,7 +5,19 @@ function read(route,cb){
         console.log(data.toString())
     })
 }
+function write(route,contents,yacb){
+    fs.writeFile(route, contents, function(err){
+        if(err){
+            console.error('unable to write',err)
+        }else{
+            console.log('successful write')
+        }
+    })
+}
+
+
 
 /*execution space */
 
-read(__dirname + '/examplefile.txt')
+//read(__dirname + '/examplefile.txt')
+write(__dirname + '/examplefile1.txt', 'addtional line added to file', console.log)
