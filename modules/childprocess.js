@@ -16,8 +16,11 @@ console.log(process.pid)
 console.log(process.connected)
 
 process.stdout.on('data', function(datas){
+    console.log('Is It dead?')
+    console.log(process.killed)
     console.log(datas.toString())
 })
 process.on('exit',function(){
     console.log('finished process')
+    console.log(process.killed)
 })
