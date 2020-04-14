@@ -1,6 +1,6 @@
 const { exec }=require('child_process')
 
-exec('ls -la', (err,stdout, sterr)=>{
+exec('node modules/console.js', (err,stdout, sterr)=>{
     if(err){
         console.error(err)
         return false
