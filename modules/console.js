@@ -1,1 +1,1 @@
-console.info('Something')
+console.error('Something')
