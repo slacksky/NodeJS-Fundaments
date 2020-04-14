@@ -25,4 +25,4 @@ function erase(route, cb){
 
 //read(__dirname + '/examplefile.txt')
 //write(__dirname + '/examplefile1.txt', 'addtional line added to file', console.log)
-erase(__dirname + '/examplefile1.txt', console.log)
+//erase(__dirname + '/examplefile1.txt', console.log)
