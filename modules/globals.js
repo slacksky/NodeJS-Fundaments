@@ -1,1 +1,2 @@
-console.log(__filename)
+global.myvariable ='desired value'
+console.log(global.myvariable)
