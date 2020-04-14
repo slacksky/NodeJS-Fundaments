@@ -15,9 +15,14 @@ function write(route,contents,yacb){
     })
 }
 
+function erase(route, cb){
+    fs.unlink(route, cb)
+}
+
 
 
 /*execution space */
 
 //read(__dirname + '/examplefile.txt')
-write(__dirname + '/examplefile1.txt', 'addtional line added to file', console.log)
+//write(__dirname + '/examplefile1.txt', 'addtional line added to file', console.log)
+erase(__dirname + '/examplefile1.txt', console.log)
