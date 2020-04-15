@@ -18,3 +18,4 @@ console.log(`${mb(os.freemem())} mbtyes`)
 console.log(`${gb(os.freemem())} gbtyes free of ${gb(os.totalmem())} toal mem`)
 */
 console.log(os.homedir())
+console.log(os.tmpdir())
