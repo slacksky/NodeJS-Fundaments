@@ -7,3 +7,12 @@ process.on('beforeExit',()=>{
 process.on('exit',()=>{
     console.log('So the process ended')
 })
+
+process.on('uncaughtException', (err, origen)=>{
+    console.error('surprise uncaught error, please fix')
+    console.error(err)
+})// as the name implies if there is no catch
+
+noneExistent()
+
+console.log('This message won\'t show up if the error is uncaught')
