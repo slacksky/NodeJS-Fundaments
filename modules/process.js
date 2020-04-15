@@ -5,14 +5,22 @@ process.on('beforeExit',()=>{
 })
 
 process.on('exit',()=>{
-    console.log('So the process ended')
+    console.log('So the process ended')//this means disconnection from the event loop
+    setTimeout(()=>{
+        console.log('like what happened in vegas, this will stay in vegas')
+    },0)
 })
+
+setTimeout(()=>{
+    console.log('This didn\'t happen in Vegas, so It\'s not staying there')
+},0)
+
 
 process.on('uncaughtException', (err, origen)=>{
     console.error('surprise uncaught error, please fix')
     console.error(err)
 })// as the name implies if there is no catch
 
-noneExistent()
+//noneExistent()
 
 console.log('This message won\'t show up if the error is uncaught')
