@@ -1,3 +1,4 @@
 import modulo from './module.mjs'
 
-modulo()
+console.log(modulo.prop)
+modulo.sayHi()
