@@ -4,5 +4,5 @@ const modulo= require('./module.js')//use normal route to get the local module s
 
 //and execute a function
 
-//console.log(modulo)
-modulo()
+console.log(modulo)
+//modulo()
