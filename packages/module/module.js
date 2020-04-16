@@ -1,0 +1,1 @@
+SayHi=()=>console.log('Hi, world')
