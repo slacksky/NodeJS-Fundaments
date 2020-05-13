@@ -11,7 +11,7 @@ function asincronic(callback){
 
 asincronic(function(err, dat){
     if(err){
-        console.error('huston we have a problem')
+        console.error('houston we have a problem')
         console.error(err)
         //throw err //alt way to stop execution
         return false
