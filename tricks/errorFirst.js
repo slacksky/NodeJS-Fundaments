@@ -10,17 +10,14 @@ function asincronic(callback){
 }
 
 
-try {
-    asincronic(function(err, dat){
-        if(err){
-            //console.error('houston we have a problem')
-            //console.error(err)
-            throw err //alt way to stop execution
-            //return false
-        }
-        console.log('all good in the console front, this is my data', dat )
-    })    
-} catch (e) {
-    console.error('error caught')
-    console.error(e)
-}//example not caught, because async function  
+asincronic(function(err, dat){
+    if(err){
+        console.error('houston we have a problem')
+        console.error(err)
+        //throw err //alt way to stop execution, doens twork with async function
+        //please use error first for async
+        return false
+    }
+    console.log('all good in the console front, this is my data', dat )
+})    
+} catch
