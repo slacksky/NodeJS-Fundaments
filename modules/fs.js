@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 function read(route,cb){
-    fs.readFile(route, (err, data)=>{
+    fs.readFile(route, (err, data)=>{//convention dictates the first callback parameter has to be the error
         console.log(data.toString())
     })
 }
