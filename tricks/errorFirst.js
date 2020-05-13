@@ -11,10 +11,10 @@ function asincronic(callback){
 
 asincronic(function(err, dat){
     if(err){
-        console.error('houston we have a problem')
-        console.error(err)
-        //throw err //alt way to stop execution
-        return false
+        //console.error('houston we have a problem')
+        //console.error(err)
+        throw err //alt way to stop execution
+        //return false
     }
     console.log('all good in the console front, this is my data', dat )
 })
